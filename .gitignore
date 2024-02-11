@@ -1,0 +1,10 @@
+.DS_Store
+
+# Vite cache
+.vite
+
+# Node.js dependencies
+node_modules/
+
+# Output build directory
+dist
