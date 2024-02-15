@@ -6,13 +6,14 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 import App from './App';
 import Error from './pages/Error';
-import Home from './pages/Home';
 import Contact from './pages/Contact';
 import About from './pages/About';
 import Resume from './pages/Resume';
 import Portfolio from './pages/Portfolio';
  
-// Define the accessible routes, and which components respond to which URL
+ 
+
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -20,15 +21,9 @@ const router = createBrowserRouter([
     errorElement: <Error />,
     children: [
       {
-        index: true,
-        element: <Home />,
-      },
-      {
-        path: '/About',
+        index: true,  
         element: <About />,
-        
       },
-     
       {
         path: '/Contact',
         element: <Contact />,
@@ -44,6 +39,7 @@ const router = createBrowserRouter([
     ],
   },
 ]);
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <RouterProvider router={router} />
