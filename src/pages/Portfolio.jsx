@@ -1,29 +1,32 @@
-import React from "react";
-import Project from "../components/Project";
+import React from 'react';
+import Project from '../components/Project';
 
 const Portfolio = () => {
-   
-
   const projects = [
     {
-      title: "Weather Report",
-      gitLink: "https://github.com/TavonnS/weather-report-app",
-      appLink: "https://tavonns.github.io/weather-report-app/",
-      image: "./src/images/weather.png",
+      title: 'Text Writer',
+      githubLink: 'https://github.com/TavonnS/pwa-writer-app',
+      deployedLink: 'https://writer-app.onrender.com/',
+      image: './src/images/writer.png',
     },
     {
-      title: "Text Writer",
-      gitLink: "https://github.com/TavonnS/pwa-writer-app",
-      appLink: "https://writer-app.onrender.com/",
-      image: "./src/images/writer.png",
+      title: 'Blog',
+      githubLink: 'https://github.com/TavonnS/tech-blog',
+      deployedLink: 'https://dry-river-45552-65f9dd09dfff.herokuapp.com/login',
+      image: './src/images/techblog.png',
     },
     {
-      title: "Blog",
-      gitLink: "https://github.com/TavonnS/tech-blog",
-      appLink: "https://dry-river-45552-65f9dd09dfff.herokuapp.com/login",
-      image: "./src/images/techblog.png",
+      title: 'Travel Log',
+      githubLink: 'https://github.com/Jdrei01/travel-log-app',
+      deployedLink: 'https://travel-log-app-2f2b22f463d1.herokuapp.com/',
+      image: './src/images/travelapp.png',
     },
-    // Add more project objects as needed
+    {
+      title: 'Weather Report',
+      githubLink: 'https://github.com/TavonnS/weather-report-app',
+      deployedLink: 'https://tavonns.github.io/weather-report-app/',
+      image: './src/images/weather.png',
+    },
   ];
 
   return (
@@ -33,15 +36,10 @@ const Portfolio = () => {
         <Project
           key={index}
           title={project.title}
-          gitLink={project.gitLink}
-          appLink={project.appLink}
-          image={project.image} 
-
-
-
+          image={project.image}
+          githubLink={project.githubLink}
+          deployedLink={project.deployedLink}
         />
-         
-       
       ))}
     </div>
   );

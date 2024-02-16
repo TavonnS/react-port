@@ -4,13 +4,17 @@ const Footer = () => {
     const fStyle = {
         backgroundColor: "lightgrey",
         textAlign: "center",
+        position: "relative",
+        marginTop: "calc(100vh - 100px)", // Adjust the distance as needed
+        width: "100%",
+        padding: "10px 0",
     };
 
     const aStyle = {
         display: "inline-block",
         margin: "0 10px",
-        textDecoration: "none", // Remove underline from links
-        color: "black", // Set link color
+        textDecoration: "none",
+        color: "black",
     };
 
     return (

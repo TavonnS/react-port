@@ -12,7 +12,7 @@ function NavTabs() {
     <ul className="nav nav-tabs">
 
       <li className='nav-name'>
-      <h2>Tavonn</h2>
+      <h1>Tavonn</h1>
 
       </li>
       

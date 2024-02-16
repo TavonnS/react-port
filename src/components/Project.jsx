@@ -5,14 +5,16 @@ const Project = ({ image, title, deployedLink, githubLink }) => {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    height: '100vh', // Adjust the height as needed
+    width: '50%',
+    display: 'inline-block',
+    // height: '100vh', // Adjust the height as needed
   };
 
   const projectStyle = {
     width: '75%',
     height: '500px',
-    border: '2px solid #333', // Example border styling
-    padding: '20px',
+    border: '5px solid #333', // Example border styling
+    padding: '10px',
     textAlign: 'center',
   };
  
@@ -20,10 +22,10 @@ const Project = ({ image, title, deployedLink, githubLink }) => {
   return (
     <div style={containerStyle}>
       <div className="project" style={projectStyle}>
-        <img src={image} alt={title} style={{ width: '75%', height: '75%' }} />
+        <img src={image} alt={title} style={{ width: '80%', height: '80%' }} />
         <h3>{title}</h3>
-        <p><a href={deployedLink}>Deployed Application</a></p>
-        <p><a href={githubLink}>GitHub Repository</a></p>
+        <p><a href={deployedLink} target='_blank' rel='noreferrer noopener'>Live Application</a></p>
+        <p><a href={githubLink} target='blank' rel='noreferrer noopener'>GitHub Repository</a></p>
       </div>
     </div>
   );

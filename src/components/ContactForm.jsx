@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './ContactForm.css';
 
 const ContactForm = () => {
     const [name, setName] = useState('');
@@ -32,46 +33,47 @@ const ContactForm = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit} style={{ maxWidth: '400px', margin: '0 auto', padding: '20px', border: '1px solid #ccc', borderRadius: '5px' }}>
-            <div style={{ marginBottom: '10px' }}>
-                <label htmlFor="name">Name:</label>
-                <input
-                    type="text"
-                    id="name"
-                    value={name}
-                    onChange={handleNameChange}
-                    required
-                    aria-label="Name"
-                    style={{ width: '100%', padding: '5px' }}
-                />
-            </div>
-            <div style={{ marginBottom: '10px' }}>
-                <label htmlFor="email">Email:</label>
-                <input
-                    type="email"
-                    id="email"
-                    value={email}
-                    onChange={handleEmailChange}
-                    required
-                    aria-label="Email"
-                    style={{ width: '100%', padding: '5px' }}
-                />
-            </div>
-            <div style={{ marginBottom: '10px' }}>
-                <label htmlFor="message">Message:</label>
-                <textarea
-                    id="message"
-                    value={message}
-                    onChange={handleMessageChange}
-                    required
-                    aria-label="Message"
-                    style={{ width: '100%', padding: '5px' }}
-                />
-            </div>
-            <button type="submit" style={{ display: 'block', margin: '0 auto', backgroundColor: '#007bff', color: '#fff', padding: '5px 10px', border: 'none', borderRadius: '3px' }}>Submit</button>
-            {submitted && <p style={{ display: 'block', margin: '0 auto', color: 'green' }}>Form submitted successfully!</p>}
-        </form>
-    );
+        <div id="contact">
+            <h3>Contact</h3>
+            <form onSubmit={handleSubmit}>
+                <div>
+                    <label htmlFor="name">Name:</label>
+                    <input
+                        type="text"
+                        id="name"
+                        value={name}
+                        onChange={handleNameChange}
+                        required
+                        aria-label="Name"
+                    />
+                </div>
+                <div>
+                    <label htmlFor="email">Email:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        value={email}
+                        onChange={handleEmailChange}
+                        required
+                        aria-label="Email"
+                    />
+                </div>
+                <div>
+                    <label htmlFor="message">Message:</label>
+                    <textarea
+                        id="message"
+                        value={message}
+                        onChange={handleMessageChange}
+                        required
+                        aria-label="Message"
+                    />
+                </div>
+                <button type="submit">Submit</button>
+                {submitted && <p>Form submitted successfully!</p>}
+            </form>
+        </div>
+
+     );
 };
 
 export default ContactForm;
