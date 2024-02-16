@@ -3,7 +3,6 @@ main {
     margin-top: 20px;
     padding: 20px;
     background-color: #F4F4F6;
-    border-radius: 5px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     border-radius: 11px;
   }
@@ -35,4 +34,7 @@ main {
     background-color: black;
     color: black;
     padding: 10px;
+  }
+  img {
+    border-radius: 11px;
   }
