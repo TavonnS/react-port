@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './ContactForm.css';
+import './contactForm.css';
 
 const ContactForm = () => {
     const [name, setName] = useState('');
