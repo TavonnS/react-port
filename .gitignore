@@ -8,6 +8,3 @@ node_modules/
 
 # Output build directory
 dist
-
-# images
-public/

@@ -10,4 +10,4 @@ This portfolio showcases my work from the UCLA Extension Web Development program
 
 ## Screen
 
-![](./public/app.png)
+![](./src/images/app.png)

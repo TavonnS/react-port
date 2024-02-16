@@ -1,8 +1,10 @@
+import mypic from '../images/mypic.jpg';
+
 export default function About() {
     return (
       <div>
         <h3>About Me</h3>
-        <img src="./dist/mypic.jpg" alt="me" />
+        <img src={mypic} alt="me" />
         <div>
         <h3>
           Welcome to my Portfolio! My name is Tavonn and I'm a web developer. 
