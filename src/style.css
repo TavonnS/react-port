@@ -2,17 +2,20 @@
 main {
     margin-top: 20px;
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: #F4F4F6;
     border-radius: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 11px;
   }
   
   /* Style for the navigation tabs */
   .nav-tabs {
     display: flex;
     justify-content: center;
-    background-color: #007bff;
+    background-color: #000C52;
     color: white;
     padding: 10px;
+     
   }
   
   .nav-link {
@@ -22,13 +25,14 @@ main {
   }
   
   .nav-link:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: white;
   }
   
   /* Style for the footer */
   footer {
     text-align: center;
-    background-color: #333;
-    color: white;
+    background-color: black;
+    color: black;
     padding: 10px;
   }

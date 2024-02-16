@@ -1,21 +1,26 @@
 import React from 'react';
 
 const Project = ({ image, title, deployedLink, githubLink }) => {
+
   const containerStyle = {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    width: '50%',
-    display: 'inline-block',
-    // height: '100vh', // Adjust the height as needed
-  };
+    width: '70%',
+    flexDirection: 'column',
+    margin: 'auto',
+    };
 
   const projectStyle = {
     width: '75%',
     height: '500px',
-    border: '5px solid #333', // Example border styling
+    border: '5px solid #000C52',  
     padding: '10px',
-    textAlign: 'center',
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexDirection: 'column',
+    display: 'flex',
+    borderRadius: '11px',
   };
  
 

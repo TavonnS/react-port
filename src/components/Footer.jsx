@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
     const fStyle = {
-        backgroundColor: "lightgrey",
+        backgroundColor: "black",
         textAlign: "center",
         position: "relative",
         marginTop: "calc(100vh - 100px)", // Adjust the distance as needed
@@ -14,7 +14,7 @@ const Footer = () => {
         display: "inline-block",
         margin: "0 10px",
         textDecoration: "none",
-        color: "black",
+        color: "white",
     };
 
     return (
